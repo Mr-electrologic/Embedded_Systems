@@ -13,6 +13,9 @@ void loop() {
   int soundsens = analogRead(sound);
   if (soundsens >= threshold) {
     digitalWrite(LED, HIGH);
+    Serial.print("Sound intensity: ");
+    Serial.print(soundsens);
+    Serial.println("");
     delay(1000);
   }
   else {
