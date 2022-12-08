@@ -47,8 +47,8 @@ void loop() {
   
   Serial.println(F(" Humidity: "));
   Serial.print(h);
-  Serial.println(F("%  Temperature: "));
+  Serial.println(F("%"));
+  Serial.println(F("Temperature: "));
   Serial.print(t);
-  
   Serial.println(F("C"));
 }
