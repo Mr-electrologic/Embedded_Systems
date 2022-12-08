@@ -25,6 +25,7 @@ void loop() {
   // put your main code here, to run repeatedly:
 
   // 0
+  
   digitalWrite(segA, LOW);
   digitalWrite(segB, LOW);
   digitalWrite(segC, LOW);
@@ -48,6 +49,7 @@ void loop() {
   delay(1000);
 
   // 2
+  
   digitalWrite(segA, LOW);
   digitalWrite(segB, LOW);
   digitalWrite(segC, HIGH);
@@ -56,10 +58,10 @@ void loop() {
   digitalWrite(segF, HIGH);
   digitalWrite(segG, LOW);
   digitalWrite(segDP, LOW);
-
   delay(1000);
 
   // 3
+  
   digitalWrite(segA, LOW);
   digitalWrite(segB, LOW);
   digitalWrite(segC, LOW);
