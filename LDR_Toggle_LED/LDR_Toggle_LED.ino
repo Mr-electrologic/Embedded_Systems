@@ -1,8 +1,9 @@
 int ldr=A0;//Set A0(Analog Input) for LDR.
 int value=0;
+#define LED 3
 void setup() {
 Serial.begin(9600);
-pinMode(3,OUTPUT);
+pinMode(LED,OUTPUT);
 }
 
 void loop() {
@@ -11,10 +12,10 @@ Serial.println("LDR value is :");//Prints the value of LDR to Serial Monitor.
 Serial.println(value);
 if(value<300)
   {
-    digitalWrite(3,HIGH);//Makes the LED glow in Dark.
+    digitalWrite(LED,HIGH);//Makes the LED glow in Dark.
   }
   else
   {
-    digitalWrite(3,LOW);//Turns the LED OFF in Light.
+    digitalWrite(LED,LOW);//Turns the LED OFF in Light.
   }
 }
